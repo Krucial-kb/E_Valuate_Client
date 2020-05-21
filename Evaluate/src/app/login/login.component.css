@@ -1,0 +1,27 @@
+
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.685);
+}
+
+.bg-img {
+    background-image: url("https://files01.tchspt.com/articles/wallpapers/retro/13.jpg");  
+    
+    min-height: 1024px;
+    min-width: 100px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
