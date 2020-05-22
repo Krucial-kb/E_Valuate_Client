@@ -3,7 +3,7 @@ body, html{
     background-repeat: no-repeat;
     background-color: #d3d3d3;
     font-family: 'Oxygen', sans-serif;
-   font-size: 12px;
+    font-size: 20px;
 }
 
 .main{
@@ -31,8 +31,9 @@ label{
 
 input,
 input::-webkit-input-placeholder {
-   font-size: 9px;
-   padding-top: 3px;
+   font-size: 12px;
+   padding-top: 6px;
+   color: black;
 }
 
 .main-login{
@@ -44,13 +45,14 @@ input::-webkit-input-placeholder {
    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+   background-color: rgba(255, 255, 255, 0.685);
 
 }
 
 .main-center{
     margin-top: 30px;
     margin: 0 auto;
-    max-width: 330px;
+    max-width: 500px;
    padding: 40px 40px;
 
 }
@@ -63,3 +65,22 @@ input::-webkit-input-placeholder {
    font-size: 8px;
    text-align: center;
 }
+
+.bg-img {
+   background-image: url("https://66.media.tumblr.com/c5d68e3f92b74f875e9eaa71e7afaf72/tumblr_pk86uikJgM1rhk4rn_400.gifv");  
+   
+   min-height: 1024px;
+   min-width: 100px;
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ input:valid {
+   background-color: #ddffdd;
+ }
+
+ input:invalid {
+   border-color: #c00000;
+ }

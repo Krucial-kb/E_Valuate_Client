@@ -11,6 +11,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FooterComponent } from './footer/footer.component';
+import { AvatarModule } from 'ngx-avatar';
+import { ExploreComponent } from './explore/explore.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -22,12 +25,15 @@ import { FooterComponent } from './footer/footer.component';
     SignUpComponent,
     HomePageComponent,
     ProfileComponent,
-    FooterComponent
+    FooterComponent,
+    ExploreComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    AvatarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
