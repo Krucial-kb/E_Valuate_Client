@@ -19,7 +19,7 @@ const routes: Routes = [
 
 
   //Always redirect to here!
-  {path: '**', redirectTo: ''}
+  {path: '**', redirectTo: 'dashboard'}
 ];
 
 @NgModule({

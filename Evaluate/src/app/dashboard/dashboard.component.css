@@ -9,9 +9,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 .img{
+max-width: 50%;
+height: auto;
 position: relative;
+top: 200px;
+left: 540px;
+
 
 }
