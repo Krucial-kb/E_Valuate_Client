@@ -3,7 +3,7 @@
   background-image: url("https://images.unsplash.com/photo-1531525797753-909788106ccb?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80");
 
   
-  min-height: 1024px;
+  min-height: 1240px;
   min-width: 100px;
   /* Center and scale the image nicely */
   background-position: center;
@@ -15,9 +15,7 @@
 .img{
 max-width: 50%;
 height: auto;
-position: relative;
-top: 200px;
-left: 540px;
-
-
+position: absolute;
+top: 230px;
+left: 765px;
 }
