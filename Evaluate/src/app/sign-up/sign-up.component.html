@@ -1,112 +1,117 @@
-<div class="bg-img">
-    <div class="main-login main-center">
-        <form class="form-horizontal" style="text-align: center; color: rgb(0, 0, 0);">
-            <strong style="font-size: x-large;">Register</strong>
-            <br>
-            <br>
-            <div class="form-group">
-                <label for="name" class="cols-sm-2 control-label">Name</label>
-                <div class="cols-sm-10">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"
-                                aria-hidden="true"></i></span>
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Joe Johnson" required
-                            min="2">
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" autocomplete="on">
+    <div class="bg-img">
+        <div class="main-login main-center">
+            <form class="form-horizontal" style="text-align: center; color: rgb(0, 0, 0);">
+                <strong style="font-size: x-large;">Register</strong>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="FullName" class="cols-sm-2 control-label">Name</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"
+                                    aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="FullName" id="FullName"
+                                placeholder="Joe Johnson" required min="2">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <label for="username" class="cols-sm-2 control-label">UserName</label>
-                <div class="cols-sm-10">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-screenshot"
-                                aria-hidden="true"></i></span>
-                        <input type="text" class="form-control" name="username" id="username"
-                            placeholder="SquimishLizzard1392" required min="6" required>
+                <div class="form-group">
+                    <label for="Username" class="cols-sm-2 control-label">UserName</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-screenshot"
+                                    aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="Username" id="Username"
+                                placeholder="SquimishLizzard1392" required min="6" required>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <label for="address" class="cols-sm-2 control-label">Address</label>
-                <div class="cols-sm-10">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"
-                                aria-hidden="true"></i></span>
-                        <input type="text" class="form-control" name="address" id="address" placeholder="Home address"
-                            Residence required>
+                <div class="form-group">
+                    <label for="Address" class="cols-sm-2 control-label">Address</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"
+                                    aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="Address" id="Address"
+                                placeholder="Home address" Residence>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <label for="phone" class="cols-sm-2 control-label">Phone Number</label>
-                <div class="cols-sm-10">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"
-                                aria-hidden="true"></i></span>
-                        <input type="tel" class="form-control" name="phone" id="phone" placeholder="(555)-555-5555"
-                            >
+                <div class="form-group">
+                    <label for="Telephone" class="cols-sm-2 control-label">Phone Number</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"
+                                    aria-hidden="true"></i></span>
+                            <input type="tel" class="form-control" name="Telephone" id="Telephone"
+                                placeholder="(555)-555-5555">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <label for="email" class="cols-sm-2 control-label">Email</label>
-                <div class="cols-sm-10">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"
-                                aria-hidden="true"></i></span>
-                        <input type="email" class="form-control" name="email" id="email" placeholder="email@example.comsal" required>
+                <div class="form-group">
+                    <label for="Email" class="cols-sm-2 control-label">Email</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"
+                                    aria-hidden="true"></i></span>
+                            <input type="email" class="form-control" name="Email" id="Email"
+                                placeholder="email@example.comsal" required>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <label for="mobile" class="cols-sm-2 control-label" required>Password</label>
-                <div class="cols-sm-10">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"
-                                aria-hidden="true"></i></span>
-                        <input type="password" class="form-control" name="name" id="name" placeholder="Password" required>
+                <div class="form-group">
+                    <label for="Password" class="cols-sm-2 control-label" required>Password</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"
+                                    aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" name="Password" id="Password"
+                                placeholder="Password" required>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <label for="dob" class="cols-sm-2 control-label">Date of Birth</label>
-                <div class="cols-sm-10">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"
-                                aria-hidden="true"></i></span>
-                        <input type="date" class="form-control" name="name" id="name" placeholder="dob" required>
+                <div class="form-group">
+                    <label for="DOB" class="cols-sm-2 control-label">Date of Birth</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"
+                                    aria-hidden="true"></i></span>
+                            <input type="date" class="form-control" name="DOB" id="DOB" placeholder="dob" required>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <label for="platform" class="cols-sm-2 control-label">Platform</label>
-                <div class="cols-sm-10">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-off"
-                                aria-hidden="true"></i></span>
-                        <select class="form-control" name="platform" id="platform"
-                            placeholder="Please select your Platform" required>
-                            <option>Choose...</option>
-                            <option>PC</option>
-                            <option>Mobile</option>
-                            <option>Nintendo</option>
-                            <option>Playstation</option>
-                            <option>Xbox</option>
-                        </select>
+                <div class="form-group">
+                    <label for="Platform" class="cols-sm-2 control-label">Platform</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-off"
+                                    aria-hidden="true"></i></span>
+                            <select class="form-control" name="Platform" id="Platform"
+                                placeholder="Please select your Platform" required>
+                                <option>Choose...</option>
+                                <option>PC</option>
+                                <option>Mobile</option>
+                                <option>Nintendo</option>
+                                <option>Playstation</option>
+                                <option>Xbox</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group ">
-                <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Submit</button>
-            </div>
-        </form>
+                <div class="form-group ">
+                    <button type="submit" [disabled]="loading" class="btn btn-primary btn-lg btn-block login-button">Register</button>
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
+</form>

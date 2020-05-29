@@ -14,6 +14,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AvatarModule } from 'ngx-avatar';
 import { ExploreComponent } from './explore/explore.component';
 import { AboutComponent } from './about/about.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -33,7 +35,10 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,
     MDBBootstrapModule.forRoot(),
     AppRoutingModule,
-    AvatarModule
+    AvatarModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
